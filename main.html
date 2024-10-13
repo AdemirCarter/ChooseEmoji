@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="home">
+        <h2 id="titulo">DESCUBRA O EMOJI ADVERSÁRIO</h2>
+        <p id="tutorial">Instruções: <br>
+            - Você e seu amigo entram nesse site e geram um emoji <br>
+            - Vocês não podem falar qual emoji pegaram <br>
+            - Você deve chutar as caracteristica do emoji do seu amigo <br>
+            - Clique nos emojis para excluir caso não faça parte da caracteristica
+            - Boa Sorte
+        </p>
+    </div>
+
+    <div id="emojis">
+        <button id="emoji_1" onclick=func1()>🏐</button>
+        <button id="emoji_2" onclick=func2()>🏀</button>
+        <button id="emoji_3" onclick=func3()>⚽</button>
+        <button id="emoji_4" onclick=func4()>💼</button>
+        <button id="emoji_5" onclick=func5()>🐷</button>
+        <button id="emoji_6" onclick=func6()>🦁</button>
+        <button id="emoji_7" onclick=func7()>🐴</button>
+        <button id="emoji_8" onclick=func8()>👛</button> <br>
+        <button id="emoji_9" onclick=func9()>🎳</button>  
+        <button id="emoji_10" onclick=func10()>🎲</button>
+        <button id="emoji_11" onclick=func11()>🎮</button>
+        <button id="emoji_12" onclick=func12()>🎸</button>
+        <button id="emoji_13" onclick=func13()>🎺</button>
+        <button id="emoji_14" onclick=func14()>🪗</button>
+        <button id="emoji_15" onclick=func15()>💻</button>
+        <button id="emoji_16" onclick=func16()>🖨️</button> <br>
+        <button id="emoji_17" onclick=func17()>📱</button>
+        <button id="emoji_18" onclick=func18()>🍔</button>  
+        <button id="emoji_19" onclick=func19()>🍕</button>
+        <button id="emoji_20" onclick=func20()>🍗</button>
+        <button id="emoji_21" onclick=func21()>☕</button>
+        <button id="emoji_22" onclick=func22()>🍷</button>
+        <button id="emoji_23" onclick=func23()>🍌</button>
+        <button id="emoji_24" onclick=func24()>🍇</button> <br>
+        <button id="emoji_25" onclick=func25()>🚗</button>
+        <button id="emoji_26" onclick=func26()>🏍️</button>
+
+        <script src="emoji1-9.js"></script>
+        <script src="emoji10-18.js"></script>
+        <script src="emoji19-26.js"></script>
+    </div>
+
+    <div id="random">
+        <button id="choose" onclick=random()>Girar
+
+            <script>
+                function random() {
+                    const choose = document.getElementById("choose")
+
+                    const emojitab = ["🏐", "🏀", "⚽", "💼", "🐷", "🦁", "🐴", "👛", "🎳", "🎲", "🎮",
+                        "🎸", "🎺", "🪗", "💻", "🖨️", "📱", "🍔", "🍕", "🍗", "☕", "🍷", "🍌", "🍇",
+                        "🚗", "🏍️"
+                    ]
+
+                    let spin = Math.floor(Math.random() * 26)
+
+                    if (spin) {
+                        choose.textContent = "Seu emoji: " + emojitab[spin]
+                    }
+                }
+            </script>
+        </button>
+    </div>
+</body>
+</html>

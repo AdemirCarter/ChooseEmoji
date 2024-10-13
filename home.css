@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+}
+
+#titulo {
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    color: rgb(127, 53, 255);
+}
+
+#tutorial {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    top: 30px;
+    padding: 10px;
+}
+
+#emojis {
+    top: 100px;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(127, 53, 255);
+}
+
+#emojis button {
+    margin: 1px;
+    font-size: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.693);
+    border: 1px solid black;
+}
+
+#random {
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+#random button {
+    font-size: 50px;
+    margin: 5px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: rgb(136, 0, 255);
+    border: 1px solid black;
+    color: white;
+}
+
+@media screen and (max-width: 1020px) {
+    #titulo {
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        color: rgb(127, 53, 255);
+    }
+    
+    #tutorial {
+        position: relative;
+        text-align: center;
+        font-size: 13px;
+        color: rgb(0, 0, 0);
+        top: 20px;
+        padding: 10px;
+    }
+    
+    #emojis {
+        top: 30px;
+        position: relative;
+        text-align: center;
+        background-color: rgb(127, 53, 255);
+        padding: 10px;
+    }
+    
+    #emojis button {
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    #random {
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+    
+    #random button {
+        font-size: 30px;
+        margin: 5px;
+        padding: 10px 50px;
+        border-radius: 10px;
+        background-color: rgb(136, 0, 255);
+        border: 1px solid black;
+        color: white;
+    }
+}
